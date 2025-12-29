@@ -1,0 +1,27 @@
+{
+  "name": "Coding to Image Generator",
+  "short_name": "CodeSnap",
+  "description": "Transform your code snippets into beautiful, shareable images with syntax highlighting",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#020202",
+  "theme_color": "#6366f1",
+  "orientation": "any",
+  "icons": [
+    {
+      "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'><rect fill='%236366f1' width='512' height='512' rx='100'/><text x='50%25' y='50%25' font-size='280' fill='white' text-anchor='middle' dy='.35em' font-family='monospace'>&lt;/&gt;</text></svg>",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 192 192'><rect fill='%236366f1' width='192' height='192' rx='40'/><text x='50%25' y='50%25' font-size='100' fill='white' text-anchor='middle' dy='.35em' font-family='monospace'>&lt;/&gt;</text></svg>",
+      "sizes": "192x192",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["developer tools", "utilities", "productivity"],
+  "lang": "en",
+  "dir": "ltr"
+}
