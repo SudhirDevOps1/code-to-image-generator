@@ -1,0 +1,9 @@
+node_modules
+dist
+coverage
+reports
+lhci_reports
+playwright-report
+test-results
+screenshots
+package-lock.json

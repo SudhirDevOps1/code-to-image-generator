@@ -1,0 +1,10 @@
+# Default owner for everything in the repository.
+* @SudhirDevOps1
+
+# Security-sensitive surfaces require the maintainer.
+/.github/ @SudhirDevOps1
+/SECURITY.md @SudhirDevOps1
+/src/js/state.js @SudhirDevOps1
+/src/js/share.js @SudhirDevOps1
+/src/js/storage.js @SudhirDevOps1
+/public/_headers @SudhirDevOps1

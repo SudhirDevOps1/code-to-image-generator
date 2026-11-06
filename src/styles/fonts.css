@@ -1,0 +1,17 @@
+/**
+ * Self-hosted fonts — no third-party requests, works fully offline.
+ * Latin subsets only keep the precache small; other scripts fall back to the
+ * platform's monospace/sans fonts automatically.
+ */
+@import '@fontsource/plus-jakarta-sans/latin-400.css';
+@import '@fontsource/plus-jakarta-sans/latin-600.css';
+@import '@fontsource/plus-jakarta-sans/latin-800.css';
+@import '@fontsource/jetbrains-mono/latin-400.css';
+@import '@fontsource/fira-code/latin-400.css';
+@import '@fontsource/source-code-pro/latin-400.css';
+@import '@fontsource/space-mono/latin-400.css';
+@import '@fontsource/roboto-mono/latin-400.css';
+@import '@fontsource/ubuntu-mono/latin-400.css';
+@import '@fontsource/inconsolata/latin-400.css';
+@import '@fontsource/ibm-plex-mono/latin-400.css';
+@import '@fontsource/cascadia-code/latin-400.css';

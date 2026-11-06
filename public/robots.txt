@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://sudhirdevops1.github.io/code-to-image-generator/sitemap.xml

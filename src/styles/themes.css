@@ -1,0 +1,205 @@
+/*
+ * Curated syntax palettes.
+ *
+ * Prism is used for tokenization only; colours are owned by this file so that
+ * every theme is self-hosted, offline-safe and exportable by html2canvas
+ * (hex/rgb only, no modern colour functions).
+ */
+
+#export-container {
+  --code-bg: #1e1e2e;
+  --code-fg: #cdd3de;
+  --code-comment: #969896;
+  --code-keyword: #b294bb;
+  --code-string: #b5bd68;
+  --code-number: #de935f;
+  --code-function: #81a2be;
+  --code-variable: #c5c8c6;
+  --code-operator: #8abeb7;
+  --code-punctuation: #cdd3de;
+}
+
+#export-container[data-theme='dracula'] {
+  --code-bg: #282a36;
+  --code-fg: #f8f8f2;
+  --code-comment: #6272a4;
+  --code-keyword: #ff79c6;
+  --code-string: #f1fa8c;
+  --code-number: #bd93f9;
+  --code-function: #50fa7b;
+  --code-variable: #8be9fd;
+  --code-operator: #ff79c6;
+  --code-punctuation: #f8f8f2;
+}
+
+#export-container[data-theme='okaidia'] {
+  --code-bg: #272822;
+  --code-fg: #f8f8f2;
+  --code-comment: #8292a2;
+  --code-keyword: #f92672;
+  --code-string: #e6db74;
+  --code-number: #ae81ff;
+  --code-function: #a6e22e;
+  --code-variable: #f8f8f2;
+  --code-operator: #f92672;
+  --code-punctuation: #f8f8f2;
+}
+
+#export-container[data-theme='nord'] {
+  --code-bg: #2e3440;
+  --code-fg: #d8dee9;
+  --code-comment: #616e88;
+  --code-keyword: #81a1c1;
+  --code-string: #a3be8c;
+  --code-number: #b48ead;
+  --code-function: #88c0d0;
+  --code-variable: #8fbcbb;
+  --code-operator: #81a1c1;
+  --code-punctuation: #d8dee9;
+}
+
+#export-container[data-theme='night-owl'] {
+  --code-bg: #011627;
+  --code-fg: #d6deeb;
+  --code-comment: #637777;
+  --code-keyword: #c792ea;
+  --code-string: #ecc48d;
+  --code-number: #f78c6c;
+  --code-function: #82aaff;
+  --code-variable: #addb67;
+  --code-operator: #7fdbca;
+  --code-punctuation: #d6deeb;
+}
+
+#export-container[data-theme='twilight'] {
+  --code-bg: #1f1f1f;
+  --code-fg: #f8f8f8;
+  --code-comment: #777;
+  --code-keyword: #cda869;
+  --code-string: #8f9d6a;
+  --code-number: #cf6a4c;
+  --code-function: #dad085;
+  --code-variable: #9b859d;
+  --code-operator: #f8f8f8;
+  --code-punctuation: #f8f8f8;
+}
+
+#export-container[data-theme='vsc-dark-plus'] {
+  --code-bg: #1e1e1e;
+  --code-fg: #d4d4d4;
+  --code-comment: #6a9955;
+  --code-keyword: #569cd6;
+  --code-string: #ce9178;
+  --code-number: #b5cea8;
+  --code-function: #dcdcaa;
+  --code-variable: #9cdcfe;
+  --code-operator: #d4d4d4;
+  --code-punctuation: #d4d4d4;
+}
+
+#export-container[data-theme='shades-of-purple'] {
+  --code-bg: #2d2b55;
+  --code-fg: #fff;
+  --code-comment: #b362ff;
+  --code-keyword: #ff9d00;
+  --code-string: #a5ff90;
+  --code-number: #ff628c;
+  --code-function: #ffb000;
+  --code-variable: #9effff;
+  --code-operator: #ff9d00;
+  --code-punctuation: #fff;
+}
+
+#export-container[data-theme='synthwave84'] {
+  --code-bg: #2b213a;
+  --code-fg: #fff;
+  --code-comment: #848bbd;
+  --code-keyword: #fede5d;
+  --code-string: #ff8b39;
+  --code-number: #f97e72;
+  --code-function: #36f9f6;
+  --code-variable: #ff7edb;
+  --code-operator: #fede5d;
+  --code-punctuation: #fff;
+}
+
+#export-container[data-theme='atom-dark'] {
+  --code-bg: #1d1f21;
+  --code-fg: #c5c8c6;
+  --code-comment: #7c7c7c;
+  --code-keyword: #b294bb;
+  --code-string: #b5bd68;
+  --code-number: #de935f;
+  --code-function: #81a2be;
+  --code-variable: #f0c674;
+  --code-operator: #8abeb7;
+  --code-punctuation: #c5c8c6;
+}
+
+/* ---------- Prism token mapping ---------- */
+
+.code .token.comment,
+.code .token.prolog,
+.code .token.doctype,
+.code .token.cdata {
+  color: var(--code-comment);
+  font-style: italic;
+}
+
+.code .token.punctuation {
+  color: var(--code-punctuation);
+}
+
+.code .token.property,
+.code .token.tag,
+.code .token.constant,
+.code .token.symbol,
+.code .token.deleted {
+  color: var(--code-variable);
+}
+
+.code .token.boolean,
+.code .token.number {
+  color: var(--code-number);
+}
+
+.code .token.selector,
+.code .token.attr-name,
+.code .token.string,
+.code .token.char,
+.code .token.builtin,
+.code .token.inserted {
+  color: var(--code-string);
+}
+
+.code .token.operator,
+.code .token.entity,
+.code .token.url {
+  color: var(--code-operator);
+}
+
+.code .token.atrule,
+.code .token.attr-value,
+.code .token.keyword {
+  color: var(--code-keyword);
+}
+
+.code .token.function,
+.code .token.class-name {
+  color: var(--code-function);
+}
+
+.code .token.regex,
+.code .token.important,
+.code .token.variable {
+  color: var(--code-variable);
+}
+
+.code .token.important,
+.code .token.bold {
+  font-weight: 700;
+}
+
+.code .token.italic {
+  font-style: italic;
+}

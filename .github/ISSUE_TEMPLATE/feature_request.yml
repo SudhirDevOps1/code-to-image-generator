@@ -1,0 +1,48 @@
+name: Feature request
+description: Suggest a capability or improvement
+title: 'feat: '
+labels: ['enhancement', 'needs-triage']
+body:
+  - type: markdown
+    attributes:
+      value: |
+        CodeSnap is intentionally client-side and privacy-first. Requests that
+        require a backend, accounts, or network calls will be evaluated against
+        that constraint.
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem are you trying to solve?
+      description: Describe the user need, not only the proposed UI.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - Editing and preview
+        - Export and image quality
+        - Themes and presets
+        - Sharing and import
+        - Accessibility
+        - PWA and offline
+        - Performance
+        - Documentation or tooling
+  - type: checkboxes
+    id: constraints
+    attributes:
+      label: Constraints
+      options:
+        - label: This can work without a backend or user accounts
+        - label: I understand this may be declined to protect the privacy model
